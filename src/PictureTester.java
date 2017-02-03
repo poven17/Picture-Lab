@@ -17,6 +17,26 @@ public class PictureTester
     beach.explore();
   }
   
+  public static void testKeepOnlyBlue()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.KeepOnlyBlue();
+    beach.explore();
+  }
+  
+  public static void testNegate(){
+	  Picture beach = new Picture("beach.jpg");
+	  beach.negate();
+	  beach.explore();
+  }
+  
+  public static void testGrayscale(){
+	  Picture beach = new Picture("beach.jpg");
+	  beach.grayscale();
+	  beach.explore();
+  }
+  
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -26,6 +46,27 @@ public class PictureTester
     caterpillar.explore();
   }
   
+  public static void testMirrorVerticalRightToLeft(){
+	  Picture caterpillar = new Picture("caterpillar.jpg");
+	    caterpillar.explore();
+	    caterpillar.mirrorVerticalRightToLeft();
+	    caterpillar.explore();
+  }
+  
+  public static void testMirrorHorizontal(){
+	  Picture motorcycle = new Picture("redMotorcycle.jpg");
+	  motorcycle.explore();
+	  motorcycle.mirrorHorizontal();
+	  motorcycle.explore();
+  }
+  
+  public static void testMirrorHorizontalBotToTop(){
+	  Picture motorcycle = new Picture("redMotorcycle.jpg");
+	  motorcycle.explore();
+	  motorcycle.mirrorHorizontalBotToTop();
+	  motorcycle.explore();
+  }
+  
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
@@ -33,6 +74,13 @@ public class PictureTester
     temple.explore();
     temple.mirrorTemple();
     temple.explore();
+  }
+  
+  public static void testMirrorArms(){
+	  Picture snow = new Picture("snowman.jpg");
+	  snow.explore();
+	  snow.mirrorArms();
+	  snow.explore();
   }
   
   /** Method to test the collage method */
@@ -58,7 +106,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+    //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
@@ -66,8 +114,11 @@ public class PictureTester
     //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
+    //testMirrorVerticalRightToLeft();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBotToTop();
     //testMirrorTemple();
-    //testMirrorArms();
+    testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
