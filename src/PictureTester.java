@@ -83,6 +83,13 @@ public class PictureTester
 	  snow.explore();
   }
   
+public static void  testMirrorGull(){
+	  Picture sea = new Picture("seagull.jpg");
+	  sea.explore();
+	  sea.mirrorGull();
+	  sea.explore();
+}
+  
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -119,7 +126,7 @@ public class PictureTester
     //testMirrorHorizontalBotToTop();
     //testMirrorTemple();
     testMirrorArms();
-    //testMirrorGull();
+    testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
